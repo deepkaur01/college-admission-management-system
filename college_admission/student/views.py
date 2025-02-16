@@ -1,6 +1,8 @@
 from django.shortcuts import render
 
-def view_name (request):
+def landingPage (request):
     return render(request,"landingPage.html")
 
-# Create your views here.
+def registerStudent(request):
+    return render(request, 'registerStudent.html')
+

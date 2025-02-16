@@ -19,6 +19,13 @@
             background: #f0f3fa;
         }
 
+        .college-name{
+            text-align: center;
+            font-size: 40px;
+            color: #5a7b95;
+           text-shadow : 3px 5px 5px #110202;
+        }
+
         .width-100 {
             width: 100%;
             float: left;
@@ -84,6 +91,10 @@
             padding: 10px 15px;
             background-color: #fff;
             margin: 2px 8px;
+        }
+
+        .main-menu li:hover{
+            background-color: #5a7b95;
         }
 
         .margin-top-50 {
@@ -195,6 +206,10 @@
             border-bottom: 2px solid #d7d7d7;
             padding-bottom: 15px;
         }
+        
+        .useful-info-ul li :hover{
+            background-color: #5a7b95;
+        }
 
         .useful-info-ul a {
             text-decoration: none;
@@ -298,8 +313,14 @@
         }
 
         .width-25 {
-            width: 30%;
+            width: 25%;
             float: left;
+        }
+        
+        .width-30{
+            width: 32%;
+            float: left;
+
         }
 
         .height-400{
@@ -338,6 +359,7 @@
             padding: 50px 0px;
         }
 
+
         .quicklink-heading{
             font-size: 18px;
             font-weight: bold;
@@ -348,6 +370,7 @@
             width:  120px;
              }
 
+             
         .quicklink-menu{
             list-style: none;
             padding-left: 10px;
@@ -360,6 +383,11 @@
             text-decoration: none;     
         }
 
+        .quicklink-menu li:hover{
+            background-color: #5a7b95;
+        }
+
+
         .get-in-touch{
             list-style: none;
             padding-left: 10px;
@@ -369,6 +397,10 @@
             color: #fff;
             line-height: 2.5;
             font-size: 15px;
+        }
+
+        .get-in-touch li:hover{
+            background-color: #5a7b95;
         }
 
         .get-in-touch li i{
@@ -390,6 +422,37 @@
             text-decoration: none;
         }
 
+        .social-media{
+            list-style: none;
+            margin-top: 10px;
+           
+        }
+
+        .social-media li{
+            float: left;
+            padding: 0px 8px;
+        }
+
+        .social-media li a img{
+            width: 30px;
+            }
+
+            .social-medias{
+                font-size: 30px;
+             }
+
+             .footer2-bacbor{
+                background: #344358;
+                padding: 10px 0px;
+                border-top: 1px solid #898989;
+             }
+
+             .footer2-content{
+                font-size:14px;
+                color: #fff;
+                text-align: center;
+             }
+
         
 
 
@@ -409,20 +472,30 @@
     </div>
     <div class="width-100 header-menu">
         <div class="container">
-            <div class="logo"></div>
-            <img id="photo" src="{% static 'student/college_admission_logo3.jpg' %}" width="250" height="200"
-                alt="sample Image">
+            <div class="logo">
+                <img id="photo" src="{% static 'student/college_admission_logo3.jpg' %}" width="250" height="200"
+                    alt="sample Image">
 
-            <ul class="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Admission</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Notice Board</a></li>
-                <li><a href="#">Contact Us</a></li>
+            </div>
 
-            </ul>
+            
+            <div>
+                
+                <div class="college-name">
+                    <h1 >COLUMBIA UNIVERSITY</h1>
+                </div>
+    
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Notice Board</a></li>
+                    <li><a href="#">Contact Us</a></li>
+    
+                    <li><a href="register">Register</a></li>
+                </ul>
+            </div>
 
         </div>
     </div>
@@ -536,7 +609,7 @@
                     <div class="width-33">
                         <div class="our-principal">
                             <div class="heading-sect">
-                                <h3 class="head-title">Hon'ble Governor of M.P</h3>
+                                <h3 class="head-title">Hon'ble Governor </h3>
                             </div>
                             <div class="content-principal">
                                 <div class="width-100 gov-sec-style">
@@ -579,31 +652,31 @@
                 <div class="width-100 margin-top-50">
                     <div class="container">
                         <h1 class="gallery-head-style">Gallery</h1>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src=" https://wtcpu.org.in/gallery/1677329718.jpeg"
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src="https://upload.wikimedia.org/wikipedia/commons/4/48/Graduation_ceremony_with_Azim_Premji.JPG"
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src="http://sites.tufts.edu/hhslnews/files/2014/05/graduates.jpg "
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src=" https://www.cedarcollege.sa.edu.au/wp-content/uploads/2017/03/Sports-day1.jpg"
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2016/05/college-1462989841.jpg"
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src=" https://www.4to40.com/wp-content/uploads/2016/01/Girls-wearing-traditional-Panjabi-dresses-perform-gidda-during-the-Lohri-celebrations-at-the-Ramgarhia-College-for-Girls-in-Ludhiana-500x332.jpg"
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src=" https://assets.telegraphindia.com/telegraph/eff940b9-68fe-4b77-bb6e-e03d462ff668.jpg"
                                 class="gallery-img "></div>
-                        <div class="width-25 height-400 margin-all-1"><img
+                        <div class="width-30 height-400 margin-all-1"><img
                                 src="https://www.holidify.com/images/cmsuploads/articles/411.jpg"
                                 class="gallery-img "></div>
-                                <div class="width-25 height-400 margin-all-1"><img
+                                <div class="width-30 height-400 margin-all-1"><img
                                 src="https://www.chase.com/content/services/rendition/image.large.jpg/content/dam/unified-assets/photography/articles/student/student_taking-community-college-classes-while-in-university.jpg"
                                 class="gallery-img "></div>
                     </div>
@@ -660,10 +733,18 @@
                           <li><i class="fa fa-whatsapp"></i> WHATS-APP: +91-123 456 789</li>
                           <li><i class="fa fa-fax"></i> CONTACT-NO: +91 -(123)-4567890</li>
                           <li><i class="fa fa-globe"></i> WEBSITE:<a href="#" class="footer-website"> https://www.dezven.com</a></li>
-                        
-                        </ul>
+                         </ul>
+                         <ul class="social-media">
+                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=CtrV2SV33rD9&format=gif"></i></a></li>
+                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=zXhRTdxWEKE5&format=gif"></i></a></li>
+                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=GNvM541FBQu7&format=gif"></i></a></li>
+                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=ZRiAFreol5mE&format=gif"></i></a></li>
+                         </ul>
                         </div>
                     </div>
+                </div>
+                <div class="width-100 footer2-bacbor">
+                    <p class="footer2-content">Copyright @ 2025,dezven.com All Rights Reserved</p>
                 </div>
 
 </body>
