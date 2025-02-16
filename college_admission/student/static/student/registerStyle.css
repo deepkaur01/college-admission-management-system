@@ -26,13 +26,13 @@ body,input{
     top: 0;
     left: 0;
 }
-
 form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 
 .title{
     font-size: 2.2rem;
@@ -94,7 +94,7 @@ form{
 }
 
 .social-text{
-    padding: 7rem 0;
+    padding: 1rem 0;
     font-size: 1rem;
 }
 
