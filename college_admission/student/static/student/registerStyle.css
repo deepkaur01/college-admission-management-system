@@ -19,18 +19,52 @@ body,input{
     overflow: hidden;
 }
 
+.container:before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #5a7b95, #a8d2f2);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+}
+
 .forms-container{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
     top: 0;
     left: 0;
 }
+
+.signin-signup{
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+ .sign-in-form{
+    z-index: 2;
+}
+
+ .sign-up-form{
+    z-index: 1;
+    opacity: 0;
 }
 
 
@@ -49,12 +83,12 @@ form{
     border-radius: 55px;
     display: grid;
     grid-template-columns: 15% 85%;
-    padding: 0.4rem;
+    padding: 0 .4rem;
 }
 
 .input-field i{
     text-align: center;
-    line-height: 55px;
+    line-height: 52px;
     color: #acacac;
     font-size: 1.1rem;
 }
@@ -125,10 +159,44 @@ form{
 /*.forms-container{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
     top: 0;
     left: 0;
 }*/
+
+.panels-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.left-panel{
+    padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel{
+    padding: 3rem 12% 2rem 17%;
+}
+
+.image{
+    width: 100%;
+}
+
+.panel .content{
+    color: #fff;
+}
 
 
 
