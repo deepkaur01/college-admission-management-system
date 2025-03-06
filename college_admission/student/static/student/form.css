@@ -35,7 +35,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background: linear-gradient(135deg, #5792ba, #2b4e65 );
+    background: linear-gradient(135deg, #5a7b95, #3d6d8d );
 }
 
 .container form .user-details{
@@ -70,7 +70,7 @@ form .user-details .input-box{
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-    border-color: #284d66;
+    border-color: #3d6d8d ;
 }
 
 form .gender-details .gender-title{
@@ -104,7 +104,7 @@ form .gender-details .category{
 #dot-2:checked ~ .category label .two,
 #dot-3:checked ~ .category label .three{
     border-color: #d9d9d9;
-    background: #284d66;
+    background: #3d6d8d ;
 }
 
 form input[type="radio"]{
@@ -126,11 +126,11 @@ form .button input{
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #5792ba, #284d66 );
+    background: linear-gradient(135deg, #5a7b95, #3d6d8d );
 }
 
 form .button input:hover{
-    background: linear-gradient(-135deg, #5792ba, #284d66 );
+    background: linear-gradient(-135deg, #5a7b95, #3d6d8d ) ;
 }
 
 @media (max-width: 584px) {
