@@ -25,6 +25,13 @@ def conformation(request):
 def course(request):
     return render(request, 'course.html')
 
+def Studentslist(request):
+    return render(request, 'Studentslist.html')
+
+def studentdashboard(request):
+    return render(request, 'studentdashboard.html')
+
+
 
 
 

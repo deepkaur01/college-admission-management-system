@@ -1,36 +1,170 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'student\course.css' %}">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'student\course.css' %}">
 </head>
+
 <body>
-     <section class="courses">
-        <h1 class="heading"> our famous courses </h1>
+    <section class="courses">
+        <h1 class="heading"> Our Famous Courses </h1>
         <div class="box-container">
+
             <div class="box">
-            <div class="image">
-                <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901785.jpg?t=st=1741181777~exp=1741185377~hmac=1abce2246776fbf6e83e7881a5c32746dfc8e36e42d995853c5d709e95b4cd1c&w=1380">
-                <h3>development</h3>
+                <div class="image">
+                    <img
+                        src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901785.jpg?t=st=1741181777~exp=1741185377~hmac=1abce2246776fbf6e83e7881a5c32746dfc8e36e42d995853c5d709e95b4cd1c&w=1380">
+                    <h3>Development</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Develop a passion for learning. If you do, you will never cease to grow.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <h3>choose what's best for you!</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">read more </a>
-               <div class="icons">
-                <span> <i class="fas fa-book"></i> 12 modules </span>
-                <span> <i class="fas fa-clock"></i> 6 hours </span>
-               </div>
+               <div class="box">
+                <div class="image">
+                    <img
+                        src="https://img.freepik.com/free-photo/factory-workers-working-together-industrial-production-hall_342744-228.jpg?t=st=1741272238~exp=1741275838~hmac=ede553eb8adaf26eabcab5d5f322a827e040f6c920c37bf6b5616d094644e86d&w=1380">
+                    <h3>Engineering</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Engineering is the application of scientific knowledge to solving problems in the real world.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
             </div>
-
-
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/happy-woman-solving-mathematic-problems_329181-1035.jpg?t=st=1741272782~exp=1741276382~hmac=e72abd27459c1b5f11afe2bc6c7bab918ea8ca3cbfd4ae59cd8e5b0b67e8a80f&w=1380"
+                        width=100%, height=400>
+                    <h3>Mathemetics</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Math is a powerful tool for global understanding and communication.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
             </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/medium-shot-scientists-posing-together_23-2148969982.jpg?t=st=1741275381~exp=1741278981~hmac=aa656b2d805f34cae9f5754eb3d54385059da2d967fffcc56513b61408702331&w=1380"
+                        width=100%, height=400>
+                    <h3>Doctors</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Doctors are the ones to have a profound knowledge of all kinds of diseases.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/medium-shot-woman-laboratory_23-2148581890.jpg?t=st=1741276437~exp=1741280037~hmac=a636364cfeacad264e421135b0af7eb9b4c6881b35e70d5c96d143fe57553733&w=1380"
+                        width=100%, height=400>
+                    <h3>Science</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Enchance your understanding of the world with a science course from the open university.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241213.jpg?t=st=1741322506~exp=1741326106~hmac=35ecb8c424d1a1748eb121c6b6f5e14f5ed0f10690d936124cce1673b3d4f383&w=1480"
+                        width=100%, height=400>
+                    <h3>Business</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>It is a field of study that deals with the principles of business and economics.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/medium-shot-team-leader-explaining-board_23-2148868449.jpg?t=st=1741322671~exp=1741326271~hmac=3ba4394eda4e0e076d9aa90dbf5c06a55233fb9cacc8bee4f84264f850a7c667&w=1380"
+                        width=100%, height=400>
+                    <h3>Teaching</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>The more I learn,the more I realise how much I don't know.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/group-business-men-women-working-with-sketches-laptop-while-spending-time-work-young-creative-people-thoughtfully-discussing-work-together-modern-office_574295-5695.jpg?t=st=1741321718~exp=1741325318~hmac=8c10f7b98d71e22cf8dfc67eeb0394573eedfcb2d6de0cbbd0d133e026476c0b&w=1380"
+                        width=100%, height=400>
+                    <h3>Designing</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>It cover a varity of topics essentail for developing skills in various design disciplines.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://img.freepik.com/free-photo/asian-people-dancing-together_1098-22132.jpg?t=st=1741321952~exp=1741325552~hmac=b75baded788005822b4dd2aca20391986abcaf347541f5c1103f7ad0687186be&w=1380"
+                        width=100%, height=400>
+                    <h3>Dancing</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>There are shortcuts to happiness and dancing is one of them.</p>
+                    <a href="#" class="btn">read more </a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
+                    </div>
+                </div>
+            </div> 
         </div>
-     </section>
-    
+        </div>
+    </section>
+
 </body>
+
 </html>

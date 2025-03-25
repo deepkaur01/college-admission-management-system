@@ -1,6 +1,125 @@
+
 .btn{
-    height: 3rem;
-    width: 100%;
-    background-color: aquamarine;
-    border: 1px rgb(84, 166, 139);
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    border: .2rem solid #5a7b95;
+    border-radius: .5rem;
+    color: #5a7b95;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+    width: 30%;
+
 }
+
+
+
+.btn span{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    background: #5a7b95;
+    color: #fff;
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: #5a7b95;
+    color: #fff;
+  }
+
+  .btn:hover span{
+    color: #5a7b95;
+    background: #fff;
+    margin-left: 1rem;
+  }
+
+  .heading{
+    font-size: 50px;
+    text-shadow: 3px 5px 5px #7b838b;
+  text-align: center;
+  }
+
+  .box-container{
+    @include grid(30rem);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .box{
+    position: relative;
+    width: calc((100vw / 3) - 30px);  
+    margin: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+    .image h3{
+      position: absolute;
+      top: 0%;
+      left: 2%;
+      color: black;
+      background: #fff;
+    }
+
+   image h3:hover .image img{
+      transform: scale(1.1rem);
+    }
+
+    image h3.hide{
+      display: none;
+    }
+
+    .image{
+      height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 2px 0px;
+    float: left;
+    object-fit: cover;
+    overflow: hidden;
+    }
+
+.image img{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.content{
+  padding: 2rem;
+  text-align: center;
+
+  }
+
+  .h3{
+    @include titleText(2rem);
+
+   }
+
+   p{
+    padding: 1rem 0;
+    @include graphText(1.5rem)
+   }
+
+   .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid black;
+   }
+
+   span{
+    @include titleText(1.5rem);
+   }
+
+   i{
+    color: #5a7b95;
+   }
