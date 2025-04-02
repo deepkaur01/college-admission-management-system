@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'student\result.css' %}">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>COLUMBIA UNIVERSITY</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+                <label for="search"> <i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img class="slider" src="{% static 'student/user.jpg'%}" width="60px">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="course">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Courses</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Results</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+
+            <div class="activity">
+                <div class="title">
+                    <span class="text">Result</span>
+                </div>
+
+                
+                    
+                        <object data="{% static "student/result/computer.pdf" %}" type="application/pdf" width="100%" height="600px">
+                            <p>Unable to display PDF file. <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.</p>
+                          </object>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -31,6 +31,10 @@ def Studentslist(request):
 def studentdashboard(request):
     return render(request, 'studentdashboard.html')
 
+def result(request):
+    return render(request, 'result.html')
+
+
 
 
 
