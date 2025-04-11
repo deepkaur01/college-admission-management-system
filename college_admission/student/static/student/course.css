@@ -1,4 +1,95 @@
 
+/* landing page code */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body,
+html {
+  font-family: Roboto, sans-serif, arial;
+  background: #f0f3fa;
+}
+
+.college-name{
+  text-align: center;
+  font-size: 40px;
+  color: #5a7b95;
+ text-shadow : 3px 5px 5px #110202;
+}
+
+.width-100 {
+  width: 100%;
+  float: left;
+}
+
+.container {
+  width: 1500px;
+  margin: 0px auto;
+}
+
+.top-header {
+  background: #5a7b95;
+  padding: 5px 0px;
+  border-bottom: 1px solid #3131315e;
+}
+
+.news-list {
+  background: #fff;
+  color: black;
+  padding: 6px;
+  font-size: 20px;
+}
+
+.headquote {
+  font-size: 18px;
+  color: #fff;
+  width: 80%;
+}
+
+#photo {
+  border: 3px solid rgb(63, 61, 61);
+  border-radius: 50% 50%;
+}
+
+.header-menu {
+  position: relative;
+  box-shadow: opx 2px 5px opx #00000036;
+}
+
+.logo {
+  width: fit-content;
+  float: left;
+}
+
+.main-menu {
+  list-style: none;
+  float: right;
+  margin-top: 20px;
+  background-color: #5a7b95;
+  padding: 10px 15px;
+
+}
+
+.main-menu a {
+  font-weight: 500;
+  color: #3a3a3a;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main-menu li {
+  float: left;
+  padding: 10px 15px;
+  background-color: #fff;
+  margin: 2px 8px;
+}
+
+.main-menu li:hover{
+  background-color: #5a7b95;
+}
+/* landing page code ends */
+
 .btn{
     display: inline-block;
     margin-top: 1rem;

@@ -1,750 +1,749 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>collage admission</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        body,
-        html {
-            font-family: Roboto, sans-serif, arial;
-            background: #f0f3fa;
-        }
-
-        .college-name{
-            text-align: center;
-            font-size: 40px;
-            color: #5a7b95;
-           text-shadow : 3px 5px 5px #110202;
-        }
-
-        .width-100 {
-            width: 100%;
-            float: left;
-        }
-
-        .container {
-            width: 1500px;
-            margin: 0px auto;
-        }
-
-        .top-header {
-            background: #5a7b95;
-            padding: 5px 0px;
-            border-bottom: 1px solid #3131315e;
-        }
-
-        .news-list {
-            background: #fff;
-            color: black;
-            padding: 6px;
-            font-size: 20px;
-        }
-
-        .headquote {
-            font-size: 18px;
-            color: #fff;
-            width: 80%;
-        }
-
-        #photo {
-            border: 3px solid rgb(63, 61, 61);
-            border-radius: 50% 50%;
-        }
-
-        .header-menu {
-            position: relative;
-            box-shadow: opx 2px 5px opx #00000036;
-        }
-
-        .logo {
-            width: fit-content;
-            float: left;
-        }
-
-        .main-menu {
-            list-style: none;
-            float: right;
-            margin-top: 20px;
-            background-color: #5a7b95;
-            padding: 10px 15px;
-
-        }
-
-        .main-menu a {
-            font-weight: 500;
-            color: #3a3a3a;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        .main-menu li {
-            float: left;
-            padding: 10px 15px;
-            background-color: #fff;
-            margin: 2px 8px;
-        }
-
-        .main-menu li:hover{
-            background-color: #5a7b95;
-        }
-
-        .margin-top-50 {
-            margin-top: 50px;
-        }
-
-        .width-33 {
-            width: 33%;
-            float: left;
-        }
-
-        .latest-news {
-            margin-left: 10px;
-            margin-right: 10px;
-            background: #fff;
-            padding: 20px;
-            height: 500px;
-            margin-bottom: 30px;
-        }
-
-        .heading-sect {
-            width: 100%;
-            float: left;
-            border-bottom: 1px solid #cfcfcf;
-            padding-bottom: 0px;
-            margin: 0px;
-            margin-bottom: 15px;
-            border: 1px solid #cfcfcf;
-            padding-top: 15px;
-            padding-left: 15px;
-            background: #5a7b95;
-            color: white;
-        }
-
-        .head-title {
-            margin: 0px;
-            padding: 0px;
-            font-size: 16px;
-            font-weight: 600;
-            padding-bottom: 5px;
-        }
-
-        .latest-news-ul {
-            padding: 0px;
-            list-style: none;
-            line-height: 40px;
-        }
-
-        .event-list {
-            margin-left: 10px;
-            margin-right: 10px;
-            background: #fff;
-            padding: 20px;
-            height: 500px;
-            margin-bottom: 30px;
-        }
-
-        .upcoming-event-list {
-            margin-top: 100px;
-            padding-top: 0px;
-            list-style: none;
-        }
-
-        .upcoming-event-list li {
-            width: 100%;
-            float: left;
-            margin-bottom: 15px;
-        }
-
-        .event-date {
-            background: #5a7b95;
-            width: 30px;
-            float: left;
-            text-align: center;
-            font-size: 14px;
-            padding: 8px;
-            color: #fff;
-            margin-right: 10px;
-        }
-
-        .notice-board {
-            margin-left: 10px;
-            margin-right: 10px;
-            background: #fff;
-            padding: 20px;
-            height: 500px;
-            margin-bottom: 30px;
-        }
-
-        .notice-board-list {
-            padding: 0px;
-            list-style: none;
-            line-height: 40px;
-        }
-
-        .notice-board-list li {
-            width: 100%;
-            float: left;
-            margin-bottom: 15px;
-        }
-
-        .useful-info-ul {
-            list-style: none;
-            margin-top: 100px;
-        }
-
-        .useful-info-ul li {
-            margin-bottom: 40px;
-            border-bottom: 2px solid #d7d7d7;
-            padding-bottom: 15px;
-        }
-        
-        .useful-info-ul li :hover{
-            background-color: #5a7b95;
-        }
-
-        .useful-info-ul a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-
-        .doc-icon {
-            height: 20px;
-            width: 20px;
-        }
-
-        #marquee {
-            height: 89%;
-        }
-
-        .file-icon {
-            height: 25px;
-            width: 25px;
-        }
-
-        .our-principal {
-            margin-left: 10px;
-            margin-right: 10px;
-            background: #fff;
-            padding: 20px;
-            height: 500px;
-            margin-bottom: 30px;
-        }
-
-        .governor-img {
-            width: 100%;
-        }
-
-        .width-40 {
-            width: 40%;
-            float: left;
-        }
-
-        .width-60 {
-            width: 60%;
-            float: left;
-        }
-
-        .gov-sec-style {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #d7d7d7;
-            padding-bottom: 30px;
-        }
-
-        .governor-name {
-            font-size: 16px;
-            color: black;
-            font-weight: bold;
-            padding-left: 10px;
-            margin-top: 20px;
-        }
-
-        .governor-designation {
-            font-size: 15px;
-            color: black;
-            padding-left: 10px;
-            margin-top: 6px;
-        }
-
-        .about-us {
-            margin-left: 10px;
-            margin-right: 10px;
-            background: #fff;
-            padding: 20px;
-            height: 500px;
-            margin-bottom: 30px;
-        }
-
-        .content-principal {
-            margin-top: 100px;
-        }
-
-        .certificate {
-            margin-left: 10px;
-            margin-right: 10px;
-            background: #fff;
-            padding: 20px;
-            height: 500px;
-            margin-bottom: 30px;
-        }
-
-        .certificate-list {
-            width: 100%;
-            float: left;
-            margin-bottom: 15px;
-        }
-
-        .gallery-head-style {
-            font-size: 40px;
-            color: #4b4848;
-            margin-bottom: 5px;
-            background: white;
-            padding: 2px 0px;
-        }
-
-        .width-25 {
-            width: 25%;
-            float: left;
-        }
-        
-        .width-30{
-            width: 32%;
-            float: left;
-
-        }
-
-        .height-400{
-            height: 300px;
-        }
-
-        .margin-all-1{
-            margin: 0.4rem;
-        }
-
-        .gallery-img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border: black 5px solid;
-        }
-
-        .recruiter-head-style{
-            font-size: 40px;
-            color: #4b4848;
-            margin-top: 5px;
-        }
-
-        .recruiter-marquee{
-            height: 100px;
-            
-        }
-
-        .recruiter-marquee img{
-            height: 80px;
-            width: 14opx;
-        }
-
-        .footer{
-            background: #405670;
-            padding: 50px 0px;
-        }
-
-
-        .quicklink-heading{
-            font-size: 18px;
-            font-weight: bold;
-            color: black;
-            margin-bottom: 10px;
-            background-color: #fff;
-            padding: 6px;
-            width:  120px;
-             }
-
-             
-        .quicklink-menu{
-            list-style: none;
-            padding-left: 10px;
-        }
-
-        .quicklink-menu li a{
-            color: #fff;
-            line-height: 2.5;
-            font-size: 15px;
-            text-decoration: none;     
-        }
-
-        .quicklink-menu li:hover{
-            background-color: #5a7b95;
-        }
-
-
-        .get-in-touch{
-            list-style: none;
-            padding-left: 10px;
-        }
-
-        .get-in-touch li{
-            color: #fff;
-            line-height: 2.5;
-            font-size: 15px;
-        }
-
-        .get-in-touch li:hover{
-            background-color: #5a7b95;
-        }
-
-        .get-in-touch li i{
-            color: black;
-            font-size: 20px;
-        }
-
-        .footer-e-mail{
-            font-size: 15px;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-        }
-
-        .footer-website{
-            font-size: 15px;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-        }
-
-        .social-media{
-            list-style: none;
-            margin-top: 10px;
-           
-        }
-
-        .social-media li{
-            float: left;
-            padding: 0px 8px;
-        }
-
-        .social-media li a img{
-            width: 30px;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>collage admission</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
             }
-
-            .social-medias{
-                font-size: 30px;
-             }
-
-             .footer2-bacbor{
-                background: #344358;
-                padding: 10px 0px;
-                border-top: 1px solid #898989;
-             }
-
-             .footer2-content{
-                font-size:14px;
-                color: #fff;
-                text-align: center;
-             }
-
-        
-
-
-    </style>
-</head>
-
-<body>
-
-    <div class="width-100 top-header">
-        <div class="container">
-            <div class="'width-100">
-                <b class="news-list"> NEWS :</b>
-                <marquee class="headquote">My college: Intelligence plus curisoity-that is the root of true education.
-                </marquee>
-            </div>
-        </div>
-    </div>
-    <div class="width-100 header-menu">
-        <div class="container">
-            <div class="logo">
-                <img id="photo" src="{% static 'student/college_admission_logo3.jpg' %}" width="250" height="200"
-                    alt="sample Image">
-
-            </div>
-
-            
-            <div>
-                
-                <div class="college-name">
-                    <h1 >COLUMBIA UNIVERSITY</h1>
-                </div>
     
-                <ul class="main-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="course">Courses</a></li>
-                    <li><a href="form">Form</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="register">Register</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-    </div>
-    <div class="width-100">
-        <img class="slider-width"
-            src="https://www.thoughtco.com/thmb/WeZTn-IMR0RqlNB4THgDxMFL__c=/2779x1852/filters:fill(auto,1)/swarthmore-college-Eric-Behrens-flickr-5706ffe35f9b581408d48cb3.jpg"
-            width="100%" height="550px">
-
-    </div>
-
-    <div class="width-100 margin-top-50">
-        <div class="container">
-            <div class="width-33">
-                <div class="latest-news">
-                    <div class="heading-sect">
-                        <h3 class="head-title">Latest New</h3>
-                    </div>
-                    <marquee id="marquee" direction="up">
-                        <ul class="latest-news-ul">
-                            <li> 5 May 2025 Ph D merit list part 01 <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                            <li> 6 May 2025 Ph D merit list part 02 <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"> </li>
-                            <li> 12 Aug 2025 Scholarships for sports students <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                            <li> 25 Aug 2025 Graduation rates for low-income student <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                            <li> 12 Sep 2025 AI be permitted in classrooms <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                            <li> 4 Oct 2025 Academic Research <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                            <li> 15 Oct 2025 online MBA programs <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                            <li> 1 Nov 2025 Resume-Boosting college jobs <img
-                                    src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif"></li>
-                        </ul>
+            body,
+            html {
+                font-family: Roboto, sans-serif, arial;
+                background: #f0f3fa;
+            }
+    
+            .college-name{
+                text-align: center;
+                font-size: 40px;
+                color: #5a7b95;
+               text-shadow : 3px 5px 5px #110202;
+            }
+    
+            .width-100 {
+                width: 100%;
+                float: left;
+            }
+    
+            .container {
+                width: 1500px;
+                margin: 0px auto;
+            }
+    
+            .top-header {
+                background: #5a7b95;
+                padding: 5px 0px;
+                border-bottom: 1px solid #3131315e;
+            }
+    
+            .news-list {
+                background: #fff;
+                color: black;
+                padding: 6px;
+                font-size: 20px;
+            }
+    
+            .headquote {
+                font-size: 18px;
+                color: #fff;
+                width: 80%;
+            }
+    
+            #photo {
+                border: 3px solid rgb(63, 61, 61);
+                border-radius: 50% 50%;
+            }
+    
+            .header-menu {
+                position: relative;
+                box-shadow: opx 2px 5px opx #00000036;
+            }
+    
+            .logo {
+                width: fit-content;
+                float: left;
+            }
+    
+            .main-menu {
+                list-style: none;
+                float: right;
+                margin-top: 20px;
+                background-color: #5a7b95;
+                padding: 10px 15px;
+    
+            }
+    
+            .main-menu a {
+                font-weight: 500;
+                color: #3a3a3a;
+                font-size: 20px;
+                text-decoration: none;
+            }
+    
+            .main-menu li {
+                float: left;
+                padding: 10px 15px;
+                background-color: #fff;
+                margin: 2px 8px;
+            }
+    
+            .main-menu li:hover{
+                background-color: #5a7b95;
+            }
+    
+            .margin-top-50 {
+                margin-top: 50px;
+            }
+    
+            .width-33 {
+                width: 33%;
+                float: left;
+            }
+    
+            .latest-news {
+                margin-left: 10px;
+                margin-right: 10px;
+                background: #fff;
+                padding: 20px;
+                height: 500px;
+                margin-bottom: 30px;
+            }
+    
+            .heading-sect {
+                width: 100%;
+                float: left;
+                border-bottom: 1px solid #cfcfcf;
+                padding-bottom: 0px;
+                margin: 0px;
+                margin-bottom: 15px;
+                border: 1px solid #cfcfcf;
+                padding-top: 15px;
+                padding-left: 15px;
+                background: #5a7b95;
+                color: white;
+            }
+    
+            .head-title {
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+                font-weight: 600;
+                padding-bottom: 5px;
+            }
+    
+            .latest-news-ul {
+                padding: 0px;
+                list-style: none;
+                line-height: 40px;
+            }
+    
+            .event-list {
+                margin-left: 10px;
+                margin-right: 10px;
+                background: #fff;
+                padding: 20px;
+                height: 500px;
+                margin-bottom: 30px;
+            }
+    
+            .upcoming-event-list {
+                margin-top: 100px;
+                padding-top: 0px;
+                list-style: none;
+            }
+    
+            .upcoming-event-list li {
+                width: 100%;
+                float: left;
+                margin-bottom: 15px;
+            }
+    
+            .event-date {
+                background: #5a7b95;
+                width: 30px;
+                float: left;
+                text-align: center;
+                font-size: 14px;
+                padding: 8px;
+                color: #fff;
+                margin-right: 10px;
+            }
+    
+            .notice-board {
+                margin-left: 10px;
+                margin-right: 10px;
+                background: #fff;
+                padding: 20px;
+                height: 500px;
+                margin-bottom: 30px;
+            }
+    
+            .notice-board-list {
+                padding: 0px;
+                list-style: none;
+                line-height: 40px;
+            }
+    
+            .notice-board-list li {
+                width: 100%;
+                float: left;
+                margin-bottom: 15px;
+            }
+    
+            .useful-info-ul {
+                list-style: none;
+                margin-top: 100px;
+            }
+    
+            .useful-info-ul li {
+                margin-bottom: 40px;
+                border-bottom: 2px solid #d7d7d7;
+                padding-bottom: 15px;
+            }
+            
+            .useful-info-ul li :hover{
+                background-color: #5a7b95;
+            }
+    
+            .useful-info-ul a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+    
+    
+            .doc-icon {
+                height: 20px;
+                width: 20px;
+            }
+    
+            #marquee {
+                height: 89%;
+            }
+    
+            .file-icon {
+                height: 25px;
+                width: 25px;
+            }
+    
+            .our-principal {
+                margin-left: 10px;
+                margin-right: 10px;
+                background: #fff;
+                padding: 20px;
+                height: 500px;
+                margin-bottom: 30px;
+            }
+    
+            .governor-img {
+                width: 100%;
+            }
+    
+            .width-40 {
+                width: 40%;
+                float: left;
+            }
+    
+            .width-60 {
+                width: 60%;
+                float: left;
+            }
+    
+            .gov-sec-style {
+                margin-bottom: 30px;
+                border-bottom: 1px solid #d7d7d7;
+                padding-bottom: 30px;
+            }
+    
+            .governor-name {
+                font-size: 16px;
+                color: black;
+                font-weight: bold;
+                padding-left: 10px;
+                margin-top: 20px;
+            }
+    
+            .governor-designation {
+                font-size: 15px;
+                color: black;
+                padding-left: 10px;
+                margin-top: 6px;
+            }
+    
+            .about-us {
+                margin-left: 10px;
+                margin-right: 10px;
+                background: #fff;
+                padding: 20px;
+                height: 500px;
+                margin-bottom: 30px;
+            }
+    
+            .content-principal {
+                margin-top: 100px;
+            }
+    
+            .certificate {
+                margin-left: 10px;
+                margin-right: 10px;
+                background: #fff;
+                padding: 20px;
+                height: 500px;
+                margin-bottom: 30px;
+            }
+    
+            .certificate-list {
+                width: 100%;
+                float: left;
+                margin-bottom: 15px;
+            }
+    
+            .gallery-head-style {
+                font-size: 40px;
+                color: #4b4848;
+                margin-bottom: 5px;
+                background: white;
+                padding: 2px 0px;
+            }
+    
+            .width-25 {
+                width: 25%;
+                float: left;
+            }
+            
+            .width-30{
+                width: 32%;
+                float: left;
+    
+            }
+    
+            .height-400{
+                height: 300px;
+            }
+    
+            .margin-all-1{
+                margin: 0.4rem;
+            }
+    
+            .gallery-img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border: black 5px solid;
+            }
+    
+            .recruiter-head-style{
+                font-size: 40px;
+                color: #4b4848;
+                margin-top: 5px;
+            }
+    
+            .recruiter-marquee{
+                height: 100px;
+                
+            }
+    
+            .recruiter-marquee img{
+                height: 80px;
+                width: 14opx;
+            }
+    
+            .footer{
+                background: #405670;
+                padding: 50px 0px;
+            }
+    
+    
+            .quicklink-heading{
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
+                margin-bottom: 10px;
+                background-color: #fff;
+                padding: 6px;
+                width:  120px;
+                 }
+    
+                 
+            .quicklink-menu{
+                list-style: none;
+                padding-left: 10px;
+            }
+    
+            .quicklink-menu li a{
+                color: #fff;
+                line-height: 2.5;
+                font-size: 15px;
+                text-decoration: none;     
+            }
+    
+            .quicklink-menu li:hover{
+                background-color: #5a7b95;
+            }
+    
+    
+            .get-in-touch{
+                list-style: none;
+                padding-left: 10px;
+            }
+    
+            .get-in-touch li{
+                color: #fff;
+                line-height: 2.5;
+                font-size: 15px;
+            }
+    
+            .get-in-touch li:hover{
+                background-color: #5a7b95;
+            }
+    
+            .get-in-touch li i{
+                color: black;
+                font-size: 20px;
+            }
+    
+            .footer-e-mail{
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+            }
+    
+            .footer-website{
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+            }
+    
+            .social-media{
+                list-style: none;
+                margin-top: 10px;
+               
+            }
+    
+            .social-media li{
+                float: left;
+                padding: 0px 8px;
+            }
+    
+            .social-media li a img{
+                width: 30px;
+                }
+    
+                .social-medias{
+                    font-size: 30px;
+                 }
+    
+                 .footer2-bacbor{
+                    background: #344358;
+                    padding: 10px 0px;
+                    border-top: 1px solid #898989;
+                 }
+    
+                 .footer2-content{
+                    font-size:14px;
+                    color: #fff;
+                    text-align: center;
+                 }
+    
+            
+    
+    
+        </style>
+    </head>
+    
+    <body>
+    
+        <div class="width-100 top-header">
+            <div class="container">
+                <div class="'width-100">
+                    <b class="news-list"> NEWS :</b>
+                    <marquee class="headquote">My college: Intelligence plus curisoity-that is the root of true education.
                     </marquee>
                 </div>
             </div>
-            <div class="width-33"  id="about">
-                <div class="event-list">
-                    <div class="heading-sect">
-                        <h3 class="head-title">Upcoming Events</h3>
-                    </div>
-                    <ul class="upcoming-event-list">
-                        <li><span class="event-date">29 <br> May</span><span> Seminor is conducted on BCA
-                                courses.</span></li>
-                        <li><span class="event-date">5 <br> june</span><span> Seminor is conducted on B.com
-                                courses.</span></li>
-                        <li><span class="event-date">19<br> july</span><span> Annual meeting of batch of BBA.</span>
-                        </li>
-                        <li><span class="event-date">15<br> Aug</span><span> sports day is conducted of BCA
-                                students.</span></li>
-                        <li><span class="event-date">15<br> Nov</span><span> Conducted its 2nd convocation
-                                ceremony.</span></li>
-                    </ul>
-
+        </div>
+        <div class="width-100 header-menu">
+            <div class="container">
+                <div class="logo">
+                    <img id="photo" src="{% static 'student/college_admission_logo3.jpg' %}" width="250" height="200"
+                        alt="sample Image">
+    
                 </div>
-            </div>
-            <div class="width-33">
-                <div class="notice-board">
-                    <div class="heading-sect">
-                        <h3 class="head-title">Notice-board</h3>
+    
+                
+                <div>
+                    
+                    <div class="college-name">
+                        <h1 >COLUMBIA UNIVERSITY</h1>
                     </div>
-                    <ul class="notice-board-list">
-                        <li><img class="doc-icon"
-                                src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">Participation in Climate
-                            Correction Day (CCD) challenge for Mission Life</li>
-                        <li><img class="doc-icon" src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">West
-                            Zone Inter University Table Teniss (man) Tournament 2025-2026</li>
-                        <li><img class="doc-icon" src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">PHD
-                            Registration Form for Selected Candidates</li>
-                        <li><img class="doc-icon" src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">List of
-                            Activities organised under TEOIP-III</li>
-                        <li><img class="doc-icon"
-                                src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">Documents for empanellment
-                            of vendor for A Class contyactor</li>
-                        <li><img class="doc-icon" src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">School
-                            of Architecture College Level Counselling 2025-2026</li>
+        
+                    <ul class="main-menu">
+                        <li><a href="{% url "landingPage" %}">Home</a></li>
+                        <li><a href="about us">About Us</a></li>
+                        <li><a href="{% url "course" %}">Courses</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="{% url "registerStudent" %}">Register</a></li>
                     </ul>
                 </div>
+    
             </div>
-            <div class="width-100 margin-top-50">
-                <div class="container">
-                    <div class="width-33">
-                        <div class="about-us">
-                            <div class="heading-sect">
-                                <h3 class="head-title">Useful Information</h3>
-                            </div>
-                            <div>
-
-                                <ul class="useful-info-ul">
-                                    <li><img class="file-icon"
-                                            src="https://cdn-icons-png.flaticon.com/128/16819/16819794.png"><a href="#">
-                                            Online Service</a></li>
-                                    <li><img class="file-icon"
-                                            src="https://cdn-icons-png.flaticon.com/128/6209/6209821.png"><a href="#">
-                                            Online Result</a></li>
-                                    <li><img class="file-icon"
-                                            src="https://cdn-icons-png.flaticon.com/128/6682/6682880.png"><a href="#">
-                                            Exam
-                                            Time Table</a></li>
-                                    <li><img class="file-icon"
-                                            src="https://cdn-icons-png.flaticon.com/128/17148/17148344.png"><a href="#">
-                                            Tenders</a></li>
-                                </ul>
-                            </div>
+        </div>
+        </div>
+        <div class="width-100">
+            <img class="slider-width"
+                src="https://www.thoughtco.com/thmb/WeZTn-IMR0RqlNB4THgDxMFL__c=/2779x1852/filters:fill(auto,1)/swarthmore-college-Eric-Behrens-flickr-5706ffe35f9b581408d48cb3.jpg"
+                width="100%" height="550px">
+    
+        </div>
+    
+        <div class="width-100 margin-top-50">
+            <div class="container">
+                <div class="width-33">
+                    <div class="latest-news">
+                        <div class="heading-sect">
+                            <h3 class="head-title">Latest New</h3>
                         </div>
-                    </div>
-                    <div class="width-33">
-                        <div class="our-principal">
-                            <div class="heading-sect">
-                                <h3 class="head-title">Hon'ble Governor </h3>
-                            </div>
-                            <div class="content-principal">
-                                <div class="width-100 gov-sec-style">
-                                    <div class="width-40">
-                                        <img class="governor-img"
-                                            src="https://tse4.mm.bing.net/th?id=OIP._rCJv53hy3_4HzY3lHME1gHaE8&pid=Api&P=0&h=180">
-                                    </div>
-                                    <div class="width-60">
-                                        <p class="governor-name"> Prof. Jay sharma</p>
-                                        <p class="governor-designation"> Principal, My college</p>
-                                    </div>
-                                </div>
-                                <div class="width-100 gov-sec-style">
-                                    <div class="width-40">
-                                        <img class="governor-img"
-                                            src="https://tse3.mm.bing.net/th?id=OIP.17zb0na-faROjWEXNDBzBgHaD4&pid=Api&P=0&h=180">
-                                    </div>
-                                    <div class="width-60">
-                                        <p class="governor-name"> RK Arora</p>
-                                        <p class="governor-designation"> Hon'ble Governor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="width-33">
-                            <div class="certificate">
-                                <div class="heading-sect">
-                                    <h3 class="head-title">My certificate</h3>
-                                </div>
-                                <div class="certificate-list"></div>
-                                <img src="https://static.vecteezy.com/system/resources/previews/000/190/863/original/gold-details-certificate-of-excellence-template-vector.jpg"
-                                    class="width-100">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="width-100 margin-top-50">
-                    <div class="container">
-                        <h1 class="gallery-head-style">Gallery</h1>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src=" https://wtcpu.org.in/gallery/1677329718.jpeg"
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/48/Graduation_ceremony_with_Azim_Premji.JPG"
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src="http://sites.tufts.edu/hhslnews/files/2014/05/graduates.jpg "
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src=" https://www.cedarcollege.sa.edu.au/wp-content/uploads/2017/03/Sports-day1.jpg"
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2016/05/college-1462989841.jpg"
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src=" https://www.4to40.com/wp-content/uploads/2016/01/Girls-wearing-traditional-Panjabi-dresses-perform-gidda-during-the-Lohri-celebrations-at-the-Ramgarhia-College-for-Girls-in-Ludhiana-500x332.jpg"
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src="https://assets.telegraphindia.com/telegraph/eff940b9-68fe-4b77-bb6e-e03d462ff668.jpg"
-                                class="gallery-img "></div>
-                        <div class="width-30 height-400 margin-all-1"><img
-                                src="https://www.holidify.com/images/cmsuploads/articles/411.jpg"
-                                class="gallery-img "></div>
-                                <div class="width-30 height-400 margin-all-1"><img
-                                src="https://www.chase.com/content/services/rendition/image.large.jpg/content/dam/unified-assets/photography/articles/student/student_taking-community-college-classes-while-in-university.jpg"
-                                class="gallery-img "></div>
-                    </div>
-                </div>
-                <div class="width-100 margin-top-50">
-                    <div class="container">
-                        <h1 class="recruiter-head-style">Top Recruiters Company</h1>
-                        <marquee class="recruiter-marquee">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.AzvaQ2wUVGqSpzFr1tgl7wHaDG&pid=Api&P=0&h=180">
-                        <img src=" https://tse3.mm.bing.net/th?id=OIP.79QrixzWGmiR3S8-8qp08gHaEK&pid=Api&P=0&h=180">
-                        <img src=" https://tse4.mm.bing.net/th?id=OIP.MPHAVL52hadir7pe0HszoAHaEK&pid=Api&P=0&h=180">
-                        <img src=" https://tse4.mm.bing.net/th?id=OIP.zwMOkAZ-STyGQ3nD3ctjzgHaEK&pid=Api&P=0&h=180">
-                        <img src=" https://tse3.mm.bing.net/th?id=OIP.tfH12PtNMzS6ccpgyW4KaQHaCg&pid=Api&P=0&h=180">
-                        <img src="https://tse2.mm.bing.net/th?id=OIP.bgzOO_V_Y79YKSEobt0dxwHaCU&pid=Api&P=0&h=180 ">
+                        <marquee id="marquee" direction="up">
+                            <ul class="latest-news-ul">
+                                {% for d in data %}
+                                    {% if d.type_of_data == "LN" %}
+                                    
+                                    <li> {{ d.date }} {{d.data}}
+                                        <img src="https://img.icons8.com/?size=50&id=gYUwOUXlHung&format=gif">
+                                    </li>
+                                    {% endif %}
+    
+                                {% endfor %}
+                                
+                            </ul>
                         </marquee>
                     </div>
                 </div>
-                <div class="width-100 margin-top-50 footer">
-                    <div class="container">
-                        <div class="width-25">
-                            <h2 class="quicklink-heading">Quick Links</h2>
-                            <ul class="quicklink-menu">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Gallery</a></li>
-                          <li><a href="#">Contact Us</a></li>
-
-                           </ul>
+                <div class="width-33"  id="about">
+                    <div class="event-list">
+                        <div class="heading-sect">
+                            <h3 class="head-title">Upcoming Events</h3>
                         </div>
-                        <div class="width-25">
-                            <h2 class="quicklink-heading">Student Section</h2>
-                            <ul class="quicklink-menu">
-                          <li><a href="#">Result</a></li>
-                          <li><a href="#">Pay Fee</a></li>
-                          <li><a href="#">Training</a></li>
-                          <li><a href="#">Placements</a></li>
-
-                           </ul>
-                        </div>
-                        <div class="width-25">
-                            <h2 class="quicklink-heading">Informatio Link</h2>
-                            <ul class="quicklink-menu">
-                          <li><a href="#">News</a></li>
-                          <li><a href="#">R&D Policy </a></li>
-                          <li><a href="#">Anti-Ragging</a></li>
-                          <li><a href="#">Admission</a></li>
-
-                           </ul>
-                        </div>
-                        <div class="width-25" id="contact" >
-                            <h2 class="quicklink-heading">GET IN TOUCH</h2>
-                            <ul class="get-in-touch">
-                          <li><i class="fa fa-envelope-o"></i> E-MAIL:<a href="#"class ="footer-e-mail"> info@dezven.com</a></li>
-                          <li><i class="fa fa-whatsapp"></i> WHATS-APP: +91-123 456 789</li>
-                          <li><i class="fa fa-fax"></i> CONTACT-NO: +91 -(123)-4567890</li>
-                          <li><i class="fa fa-globe"></i> WEBSITE:<a href="#" class="footer-website"> https://www.dezven.com</a></li>
-                         </ul>
-                         <ul class="social-media">
-                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=CtrV2SV33rD9&format=gif"></i></a></li>
-                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=zXhRTdxWEKE5&format=gif"></i></a></li>
-                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=GNvM541FBQu7&format=gif"></i></a></li>
-                            <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=ZRiAFreol5mE&format=gif"></i></a></li>
-                         </ul>
-                        </div>
+                        <ul class="upcoming-event-list">
+                            {% for d in data %}
+                                {% if d.type_of_data == "UE" %}
+                                
+                                <li>
+                                    <span class="event-date">
+                                        {{ d.date.day }} <br> 
+                                        {{ d.date|date:"M" }}
+                                    </span>
+                                    <span> 
+                                        {{d.data}}
+                                    </span>
+                                
+                                </li>
+                                {% endif %}
+    
+                            {% endfor %}
+                            
+                        </ul>
+    
                     </div>
                 </div>
-                <div class="width-100 footer2-bacbor">
-                    <p class="footer2-content">Copyright @ 2025,dezven.com All Rights Reserved</p>
+                <div class="width-33">
+                    <div class="notice-board">
+                        <div class="heading-sect">
+                            <h3 class="head-title">Notice-board</h3>
+                        </div>
+                        <ul class="notice-board-list">
+                            {% for d in data %}
+                                {% if d.type_of_data == "NB" %}
+                                
+                                
+                                <li>
+                                    <img class="doc-icon"
+                                    src="https://cdn-icons-png.flaticon.com/128/2991/2991112.png">
+                                    {{ d.data}}
+                                </li>
+                                {% endif %}
+    
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
                 </div>
+                <div class="width-100 margin-top-50">
+                    <div class="container">
+                        <div class="width-33">
+                            <div class="about-us">
+                                <div class="heading-sect">
+                                    <h3 class="head-title">Useful Information</h3>
+                                </div>
+                                <div>
+    
+                                    <ul class="useful-info-ul">
+                                        <li><img class="file-icon"
+                                                src="https://cdn-icons-png.flaticon.com/128/16819/16819794.png"><a href="#">
+                                                Online Service</a></li>
+                                        <li><img class="file-icon"
+                                                src="https://cdn-icons-png.flaticon.com/128/6209/6209821.png"><a href="#">
+                                                Online Result</a></li>
+                                        <li><img class="file-icon"
+                                                src="https://cdn-icons-png.flaticon.com/128/6682/6682880.png"><a href="#">
+                                                Exam
+                                                Time Table</a></li>
+                                        <li><img class="file-icon"
+                                                src="https://cdn-icons-png.flaticon.com/128/17148/17148344.png"><a href="#">
+                                                Tenders</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="width-33">
+                            <div class="our-principal">
+                                <div class="heading-sect">
+                                    <h3 class="head-title">Hon'ble Governor </h3>
+                                </div>
+                                <div class="content-principal">
+                                    <div class="width-100 gov-sec-style">
+                                        <div class="width-40">
+                                            <img class="governor-img"
+                                                src="https://tse4.mm.bing.net/th?id=OIP._rCJv53hy3_4HzY3lHME1gHaE8&pid=Api&P=0&h=180">
+                                        </div>
+                                        <div class="width-60">
+                                            <p class="governor-name"> Prof. Jay sharma</p>
+                                            <p class="governor-designation"> Principal, My college</p>
+                                        </div>
+                                    </div>
+                                    <div class="width-100 gov-sec-style">
+                                        <div class="width-40">
+                                            <img class="governor-img"
+                                                src="https://tse3.mm.bing.net/th?id=OIP.17zb0na-faROjWEXNDBzBgHaD4&pid=Api&P=0&h=180">
+                                        </div>
+                                        <div class="width-60">
+                                            <p class="governor-name"> RK Arora</p>
+                                            <p class="governor-designation"> Hon'ble Governor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="width-33">
+                                <div class="certificate">
+                                    <div class="heading-sect">
+                                        <h3 class="head-title">My certificate</h3>
+                                    </div>
+                                    <div class="certificate-list"></div>
+                                    <img src="https://static.vecteezy.com/system/resources/previews/000/190/863/original/gold-details-certificate-of-excellence-template-vector.jpg"
+                                        class="width-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="width-100 margin-top-50">
+                        <div class="container">
+                            <h1 class="gallery-head-style">Gallery</h1>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src=" https://wtcpu.org.in/gallery/1677329718.jpeg"
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/4/48/Graduation_ceremony_with_Azim_Premji.JPG"
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src="http://sites.tufts.edu/hhslnews/files/2014/05/graduates.jpg "
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src=" https://www.cedarcollege.sa.edu.au/wp-content/uploads/2017/03/Sports-day1.jpg"
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2016/05/college-1462989841.jpg"
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src=" https://www.4to40.com/wp-content/uploads/2016/01/Girls-wearing-traditional-Panjabi-dresses-perform-gidda-during-the-Lohri-celebrations-at-the-Ramgarhia-College-for-Girls-in-Ludhiana-500x332.jpg"
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src="https://assets.telegraphindia.com/telegraph/eff940b9-68fe-4b77-bb6e-e03d462ff668.jpg"
+                                    class="gallery-img "></div>
+                            <div class="width-30 height-400 margin-all-1"><img
+                                    src="https://www.holidify.com/images/cmsuploads/articles/411.jpg"
+                                    class="gallery-img "></div>
+                                    <div class="width-30 height-400 margin-all-1"><img
+                                    src="https://www.chase.com/content/services/rendition/image.large.jpg/content/dam/unified-assets/photography/articles/student/student_taking-community-college-classes-while-in-university.jpg"
+                                    class="gallery-img "></div>
+                        </div>
+                    </div>
+                    <div class="width-100 margin-top-50">
+                        <div class="container">
+                            <h1 class="recruiter-head-style">Top Recruiters Company</h1>
+                            <marquee class="recruiter-marquee">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.AzvaQ2wUVGqSpzFr1tgl7wHaDG&pid=Api&P=0&h=180">
+                            <img src=" https://tse3.mm.bing.net/th?id=OIP.79QrixzWGmiR3S8-8qp08gHaEK&pid=Api&P=0&h=180">
+                            <img src=" https://tse4.mm.bing.net/th?id=OIP.MPHAVL52hadir7pe0HszoAHaEK&pid=Api&P=0&h=180">
+                            <img src=" https://tse4.mm.bing.net/th?id=OIP.zwMOkAZ-STyGQ3nD3ctjzgHaEK&pid=Api&P=0&h=180">
+                            <img src=" https://tse3.mm.bing.net/th?id=OIP.tfH12PtNMzS6ccpgyW4KaQHaCg&pid=Api&P=0&h=180">
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.bgzOO_V_Y79YKSEobt0dxwHaCU&pid=Api&P=0&h=180 ">
+                            </marquee>
+                        </div>
+                    </div>
+                    <div class="width-100 margin-top-50 footer">
+                        <div class="container">
+                            <div class="width-25">
+                                <h2 class="quicklink-heading">Quick Links</h2>
+                                <ul class="quicklink-menu">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Gallery</a></li>
+                              <li><a href="#">Contact Us</a></li>
+    
+                               </ul>
+                            </div>
+                            <div class="width-25">
+                                <h2 class="quicklink-heading">Student Section</h2>
+                                <ul class="quicklink-menu">
+                              <li><a href="#">Result</a></li>
+                              <li><a href="#">Pay Fee</a></li>
+                              <li><a href="#">Training</a></li>
+                              <li><a href="#">Placements</a></li>
+    
+                               </ul>
+                            </div>
+                            <div class="width-25">
+                                <h2 class="quicklink-heading">Informatio Link</h2>
+                                <ul class="quicklink-menu">
+                              <li><a href="#">News</a></li>
+                              <li><a href="#">R&D Policy </a></li>
+                              <li><a href="#">Anti-Ragging</a></li>
+                              <li><a href="#">Admission</a></li>
+    
+                               </ul>
+                            </div>
+                            <div class="width-25" id="contact" >
+                                <h2 class="quicklink-heading">GET IN TOUCH</h2>
+                                <ul class="get-in-touch">
+                              <li><i class="fa fa-envelope-o"></i> E-MAIL:<a href="#"class ="footer-e-mail"> info@dezven.com</a></li>
+                              <li><i class="fa fa-whatsapp"></i> WHATS-APP: +91-123 456 789</li>
+                              <li><i class="fa fa-fax"></i> CONTACT-NO: +91 -(123)-4567890</li>
+                              <li><i class="fa fa-globe"></i> WEBSITE:<a href="#" class="footer-website"> https://www.dezven.com</a></li>
+                             </ul>
+                             <ul class="social-media">
+                                <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=CtrV2SV33rD9&format=gif"></i></a></li>
+                                <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=zXhRTdxWEKE5&format=gif"></i></a></li>
+                                <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=GNvM541FBQu7&format=gif"></i></a></li>
+                                <li><a href="#"class ="social-medias"><img src="https://img.icons8.com/?size=48&id=ZRiAFreol5mE&format=gif"></i></a></li>
+                             </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-100 footer2-bacbor">
+                        <p class="footer2-content">Copyright @ 2025,dezven.com All Rights Reserved</p>
+                    </div>
+    
+    </body>
+    
+    </html>
 
-</body>
-
-</html>
