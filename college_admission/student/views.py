@@ -14,6 +14,7 @@ def landingPage (request):
     }
     return render(request,"landingPage.html", context)
 
+
 def registerStudent(request):
     return render(request, 'registerStudent.html')
 
